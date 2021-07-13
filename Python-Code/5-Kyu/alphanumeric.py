@@ -12,3 +12,5 @@ def alphanumeric(password):
     if flag == 1:
         return False
     return True 
+
+print(alphanumeric("HELLOworld123"))
