@@ -24,7 +24,7 @@ string pig_it(string str){
 	for (auto &ch : str){
 		
 		if (ch == ' '){
-			if (word == "!" || word == "." || word == "?"){
+			if (word == "!" || word == "." || word == "?" || word == ","){
 				splitWord.push_back(word);
 			}else{
 				word.push_back(word[0]);
@@ -38,7 +38,7 @@ string pig_it(string str){
 			word += ch;
 		}
 	}
-	if (word == "!" || word == "." || word == "?"){
+	if (word == "!" || word == "." || word == "?" || word == ","){
 				splitWord.push_back(word);
 			}else{
 				word.push_back(word[0]);
